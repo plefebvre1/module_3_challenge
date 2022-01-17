@@ -18,3 +18,4 @@ The final results:
 
 Looking at the graph below for when arbitrage opportunities occured on Jan 10, the majority occured in the morning, just after the exchange would have opened. After the first few hours, the exchanges seemed to stabilize and remove opportunity for arbitrage profits.
 
+![Jan10CumProfits](/Images/Jan_10_CummulativeProfits.png)
