@@ -1,0 +1,325 @@
+(base)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace
+$ conda activate dev
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace
+$ git clone https://github.com/plefebvre1/module_3_challenge.git
+Cloning into 'module_3_challenge'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace
+$ cd module_3_challenge/
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Starter_Code/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git add Starter_Code/
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Starter_Code/.DS_Store
+        new file:   Starter_Code/Resources/bitstamp.csv
+        new file:   Starter_Code/Resources/coinbase.csv
+        new file:   Starter_Code/crypto_arbitrage.ipynb
+
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git commit -m "Initial commit of given starter code"
+[main a1617d1] Initial commit of given starter code
+ 4 files changed, 260854 insertions(+)
+ create mode 100644 Starter_Code/.DS_Store
+ create mode 100644 Starter_Code/Resources/bitstamp.csv
+ create mode 100644 Starter_Code/Resources/coinbase.csv
+ create mode 100644 Starter_Code/crypto_arbitrage.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 8.58 MiB | 4.62 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/plefebvre1/module_3_challenge.git
+   9886f6c..a1617d1  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ jupyter lab
+[I 2022-01-16 16:22:47.836 ServerApp] jupyterlab | extension was successfully linked.
+[W 2022-01-16 16:22:47.850 ServerApp] The 'min_open_files_limit' trait of a ServerApp instance expected an int, not the NoneType None.
+[I 2022-01-16 16:22:47.898 LabApp] JupyterLab extension loaded from C:\Users\peter\anaconda3\envs\dev\envs\dev\lib\site-packages\jupyterlab
+[I 2022-01-16 16:22:47.898 LabApp] JupyterLab application directory is C:\Users\peter\anaconda3\envs\dev\envs\dev\share\jupyter\lab
+[I 2022-01-16 16:22:47.903 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2022-01-16 16:22:48.266 ServerApp] nbclassic | extension was successfully loaded.
+[I 2022-01-16 16:22:48.267 ServerApp] Serving notebooks from local directory: C:\Users\peter\FinTech_Workspace\module_3_challenge
+[I 2022-01-16 16:22:48.268 ServerApp] Jupyter Server 1.4.1 is running at:
+[I 2022-01-16 16:22:48.268 ServerApp] http://localhost:8888/lab?token=791e22cbf9fea96b8ced9fcb43a07b2e52b911be0461c3d4
+[I 2022-01-16 16:22:48.268 ServerApp]  or http://127.0.0.1:8888/lab?token=791e22cbf9fea96b8ced9fcb43a07b2e52b911be0461c3d4
+[I 2022-01-16 16:22:48.269 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2022-01-16 16:22:48.661 ServerApp]
+
+    To access the server, open this file in a browser:
+        file:///C:/Users/peter/AppData/Roaming/jupyter/runtime/jpserver-5228-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=791e22cbf9fea96b8ced9fcb43a07b2e52b911be0461c3d4
+     or http://127.0.0.1:8888/lab?token=791e22cbf9fea96b8ced9fcb43a07b2e52b911be0461c3d4
+[I 2022-01-16 16:22:53.646 LabApp] Build is up to date
+[W 2022-01-16 16:22:53.654 ServerApp] 404 GET /api/contents/Module_3_Challenge/Starter_Code/crypto_arbitrage.ipynb?content=0&1642368173062 (::1): No such file or directory: Module_3_Challenge/Starter_Code/crypto_arbitrage.ipynb
+[W 2022-01-16 16:22:53.654 ServerApp] No such file or directory: Module_3_Challenge/Starter_Code/crypto_arbitrage.ipynb
+[W 2022-01-16 16:22:53.655 ServerApp] 404 GET /api/contents/Module_3_Challenge/Starter_Code/crypto_arbitrage.ipynb?content=0&1642368173062 (::1) 7.62ms referer=http://localhost:8888/lab
+[W 2022-01-16 16:22:53.675 ServerApp] 404 GET /api/contents/Module_3_Challenge/Starter_Code?1642368173668 (::1): No such file or directory: Module_3_Challenge/Starter_Code
+[W 2022-01-16 16:22:53.675 ServerApp] No such file or directory: Module_3_Challenge/Starter_Code
+[W 2022-01-16 16:22:53.675 ServerApp] 404 GET /api/contents/Module_3_Challenge/Starter_Code?1642368173668 (::1) 1.00ms referer=http://localhost:8888/lab
+[I 2022-01-16 16:23:06.210 ServerApp] Shutting down on /api/shutdown request.
+[I 2022-01-16 16:23:06.211 ServerApp] Shutting down 0 kernels
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ https://github.com/plefebvre1/module_3_challenge.git
+bash: https://github.com/plefebvre1/module_3_challenge.git: No such file or directory
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ touch terminal_history.txt
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ ls
+README.md  Starter_Code/  terminal_history.txt
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git add terminal_history.txt
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git commit -m "terminal_history.txt initialized"
+[main e6f7351] terminal_history.txt initialized
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 terminal_history.txt
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 298 bytes | 298.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/plefebvre1/module_3_challenge.git
+   a1617d1..e6f7351  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Starter_Code/crypto_arbitrage.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git add Starter_Code/crypto_arbitrage.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Starter_Code/crypto_arbitrage.ipynb
+
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git commit -m "Data Collection step complete"
+[main 1bbb356] Data Collection step complete
+ 1 file changed, 64 insertions(+), 64 deletions(-)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.10 KiB | 140.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/plefebvre1/module_3_challenge.git
+   e6f7351..1bbb356  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Starter_Code/crypto_arbitrage.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git add Starter_Code/crypto_arbitrage.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git commit -m "Data Preparation step completed for bitstamp and coinbase dfs"
+[main 7e2d079] Data Preparation step completed for bitstamp and coinbase dfs
+ 1 file changed, 30 insertions(+), 15 deletions(-)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 961 bytes | 137.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/plefebvre1/module_3_challenge.git
+   1bbb356..7e2d079  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Starter_Code/crypto_arbitrage.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git add Starter_Code/crypto_arbitrage.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git commit -m "Arbitrage Opportunity Analysis Complete"
+[main 1580eb4] Arbitrage Opportunity Analysis Complete
+ 1 file changed, 3473 insertions(+), 1787 deletions(-)
+ rewrite Starter_Code/crypto_arbitrage.ipynb (85%)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 370.30 KiB | 17.63 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/plefebvre1/module_3_challenge.git
+   7e2d079..1580eb4  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Starter_Code/crypto_arbitrage.ipynb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bitcoin_arbitrage_opportunities_analysis.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git add Starter_Code/crypto_arbitrage.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git add bitcoin_arbitrage_opportunities_analysis.md
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Starter_Code/crypto_arbitrage.ipynb
+        new file:   bitcoin_arbitrage_opportunities_analysis.md
+
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git commit -m "Added analysis .md summary file"
+[main 8d33f57] Added analysis .md summary file
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+ create mode 100644 bitcoin_arbitrage_opportunities_analysis.md
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.40 KiB | 1.40 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/plefebvre1/module_3_challenge.git
+   1580eb4..8d33f57  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_3_challenge (main)
+$
